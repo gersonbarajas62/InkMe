@@ -3,11 +3,11 @@ import React, { Component } from 'react';
 import {BrowserRouter, Route, Switch} from 'react-router-dom'
 import Home from './Components/Home'
 
-import Navigation from './Components/Navigation.jsx'
+import Navigation from './Components/Navigation.jsx.js'
 
-import MapContainer from './Components/MapContainer.jsx'
-import Login from './Components/Login.jsx'
-import Styles from './Components/Styles.jsx'
+import MapContainer from './Components/MapContainer.jsx.js'
+import Login from './Components/Login.jsx.js'
+import Styles from './Components/Styles.jsx.js'
 
 
 class App extends Component {

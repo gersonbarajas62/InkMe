@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-//import Book from './Book.jsx'
+import Book from './Book.jsx'
 const mapStyles = {
   map: {
     position: 'absolute',
