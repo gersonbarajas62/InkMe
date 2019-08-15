@@ -4,8 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import axios from 'axios';
 import $ from 'jquery';
 import DatePicker from "react-datepicker";
-//import "react-datepicker/dist/react-datepicker.css";
-//require("babel-polyfill");
+import "react-datepicker/dist/react-datepicker.css";
+require("babel-polyfill");
 
 class Book extends Component{
   constructor (){

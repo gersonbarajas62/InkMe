@@ -3,32 +3,40 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 
 module.exports = {
-  entry: './client/src/index.js',
+  entry: './client/src/Index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'
   },
-  resolve: {
-    extensions: ['.js', '.jsx']
-  },
+  
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
-        use: {
-          loader: "babel-loader"
-        }
+        test: /\.(gif|png|jpe?g|svg)$/i,
+        use: [
+          'file-loader',
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              bypassOnDebug: true, // webpack@1.x
+              disable: true, // webpack@2.x and newer
+            },
+          },
+        ],
       },
       {
-        test: /\.html$/,
-        use: [
-          {
-            loader: "html-loader"
-          }
-        ]
+        test: /\.jsx?$/,
+        use: ['babel-loader'],
+        exclude: /node_modules|packages/,
       },
-    ]
+      {
+        test: /\.css$/,
+        use: ['style-loader','css-loader','sass-loader'],
+      },
+    ],
+  },
+  resolve: {
+    extensions: ['.js', '.jsx'],
   },
   plugins: [
     new HtmlWebPackPlugin({

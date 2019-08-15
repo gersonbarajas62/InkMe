@@ -1,4 +1,5 @@
-/*const mapStyles = {
+
+const mapStyles = {
   map: {
     position: 'absolute',
     width: '50%',
@@ -131,4 +132,4 @@ CurrentLocation.defaultProps = {
   },
   centerAroundCurrentLocation: false,
   visible: true
-};*/
+};

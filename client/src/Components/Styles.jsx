@@ -1,5 +1,5 @@
 
-import React from 'react';
+/*
 
 class Styles extends React.Component{
     render(){
@@ -7,10 +7,11 @@ class Styles extends React.Component{
             <div>hey</div>
         )
     }
-}
-/*
-import Example2 from './Carousel2.jsx';
+}*/
 
+//import Example2 from './Carousel2.jsx';
+
+import React from 'react';
 
 class Styles extends React.Component {
 
@@ -41,9 +42,9 @@ class Styles extends React.Component {
            <option value="text4">Chicano Style</option>
 
           </select>
-           <Example2 />
+           
         </div>
         )}
     }
 
-export default Styles;*/
+export default Styles;

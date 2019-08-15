@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDom from 'react-dom';
-//import './home.css'
-import Example from './Carousel.jsx';
+import './home.css'
+
 class Home extends React.Component {
 
     constructor(props){

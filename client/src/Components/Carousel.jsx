@@ -1,8 +1,8 @@
 /*import React, { Component } from 'react';
 import { Carousel, CarouselItem, CarouselControl, CarouselIndicators, CarouselCaption } from 'reactstrap';
-//import '../App.css';
-// import 'bootstrap/dist/css/bootstrap.min.css';
-import Image1 from '../../dist/images/slide1.jpg';
+import '../App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Image1 from '../../public/images/slide1.jpg';
 import Image2 from '../../dist/images/slide2.jpg';
 import Image3 from '../../dist/images/slide3.jpg';
 import Image4 from '../../dist/images/slide4.jpg';
@@ -16,31 +16,8 @@ import Image9 from '../../dist/images/slide9.jpg';
 const items = [
   {
     src: Image1
-  },
-  {
-    src: Image2
-  },
-  {
-    src: Image3
-  },
-  {
-    src: Image4
-  },
-  {
-    src: Image5
-  },
-  {
-    src: Image6
-  },
-  {
-    src: Image7
-  },
-  {
-    src: Image8
-  },
-  {
-    src: Image9
   }
+  
 ];
 
 class Example extends Component {
