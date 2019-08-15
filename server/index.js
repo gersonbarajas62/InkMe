@@ -1,13 +1,20 @@
-var express = require('express');
-var bodyParser = require('body-parser');
+const express = require('express');
+const bodyParser = require('body-parser');
+const path = require('path');
 
 
-
-var app = express();
-
- app.use(express.static(__dirname + '/../client/dist'));
+const app = express();
 
 
-app.listen(3000, function() {
-  console.log('listening on port 3000!');
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(express.static(path.join(__dirname, '../client/src')))
+
+app.get('/', function(req, res){
+  res.send('hello World');
+
 });
+
+app.listen(3000, function(){
+  console.log('server started on port 3000.....');
+})
