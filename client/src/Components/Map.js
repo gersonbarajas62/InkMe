@@ -1,7 +1,4 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Book from './Book.jsx'
-const mapStyles = {
+/*const mapStyles = {
   map: {
     position: 'absolute',
     width: '50%',
@@ -134,4 +131,4 @@ CurrentLocation.defaultProps = {
   },
   centerAroundCurrentLocation: false,
   visible: true
-};
+};*/

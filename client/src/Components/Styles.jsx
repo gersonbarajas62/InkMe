@@ -1,5 +1,15 @@
+
 import React from 'react';
-//import Example2 from './Carousel2.jsx';
+
+class Styles extends React.Component{
+    render(){
+        return( 
+            <div>hey</div>
+        )
+    }
+}
+/*
+import Example2 from './Carousel2.jsx';
 
 
 class Styles extends React.Component {
@@ -36,4 +46,4 @@ class Styles extends React.Component {
         )}
     }
 
-export default Styles;
+export default Styles;*/

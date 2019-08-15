@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 // RHL only for front end development
 import {BrowserRouter, Route, Switch} from 'react-router-dom'
-import Home from './Components/Home'
+import Home from './Components/Home';
 
-import Navigation from './Components/Navigation.jsx.js'
+import Navigation from './Components/Navigation';
 
-import MapContainer from './Components/MapContainer.jsx.js'
-import Login from './Components/Login.jsx.js'
-import Styles from './Components/Styles.jsx.js'
+import MapContainer from './Components/MapContainer';
+import Login from './Components/Login';
+import Styles from './Components/Styles';
 
 
 class App extends Component {
@@ -28,7 +28,7 @@ class App extends Component {
               <Route exact path="/" component={Home} />
               <Route path="/booking" component={MapContainer} ></Route>
               <Route path="/login"  component={Login} ></Route>
-              <Route path ="/styles" component={Styles} ></Route>
+              
             </Switch>
         </div>
 

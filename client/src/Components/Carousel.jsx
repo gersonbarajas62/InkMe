@@ -1,6 +1,6 @@
 /*import React, { Component } from 'react';
 import { Carousel, CarouselItem, CarouselControl, CarouselIndicators, CarouselCaption } from 'reactstrap';
-import '../App.css';
+//import '../App.css';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import Image1 from '../../dist/images/slide1.jpg';
 import Image2 from '../../dist/images/slide2.jpg';
