@@ -1,0 +1,21 @@
+language: node_js
+cache:
+  directories:
+    - ~!@/.npm
+node_js:
+  - '8'
+git:
+  depth: 3
+script:
+  - npm build
+ 
+deploy:
+  provider: pages
+  skip-cleanup: true
+  keep-history: true
+  github-token: $githubtoken
+  local-dir: dist/
+  target-branch: master
+  commit_message: " Deploy release ${TRAVIS_TAG}"
+  on:
+    branch: structure
