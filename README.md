@@ -1,2 +1,0 @@
-# InkM
-tatto shop locator
